@@ -119,7 +119,7 @@ Example program: `factorial`
       <LLFI_BUILD_ROOT>/bin/injectfault ./llfi/factorial-faultinjection.exe 6
       ```
       
-Basci Usage
+Basic Usage
 -------
 There are some important commands to use LLFI, and we use `sum` as example. And these commands must be executed with input.yaml under the same path.
 1. Complie the program
