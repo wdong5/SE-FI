@@ -133,6 +133,7 @@ There are some important commands to use LLFI, and we use `sum` as example. And 
 5. Analyze the result
 ```python measure.py```
 
+To make sure the result analysis is meaningful, please use the same input as arguments when using command `profile` and `injectfault`.
 
 
 ####GUI
