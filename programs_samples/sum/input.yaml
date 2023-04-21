@@ -1,0 +1,22 @@
+timeOut: 10
+
+compileOption:
+    instSelMethod:
+      - insttype:
+          include:
+            - load
+            - add
+      - funcname:
+          include: 
+            - all
+          exclude:
+            - sum2
+
+    regSelMethod: regloc
+    regloc: dstreg
+
+runOption:
+    - run:
+        numOfRuns: 100
+        fi_type: bitflip
+        verbose: True
