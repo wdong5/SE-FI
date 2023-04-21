@@ -1,4 +1,4 @@
-SE-FI
+SE-FI: Surrogate Error Fault Injector
 ====
 
 **NOTE: We're in the process of updating SE-FI to use the latest LLVM version, and also support Machine Learning (ML) operations.
