@@ -118,6 +118,22 @@ Example program: `factorial`
       ```
       <LLFI_BUILD_ROOT>/bin/injectfault ./llfi/factorial-faultinjection.exe 6
       ```
+      
+Basci Usage
+-------
+There are some important commands to use LLFI, and we use `sum` as example. And these commands must be executed with input.yaml under the same path.
+1. Complie the program
+```clang -emit-llvm -S *.c ```
+2. Instrumenting code in the program IR.
+```instrument --readable sum.ll ```
+3. Run the fault-free IR
+```profile ./llfi/sum-profiling.exe 10```
+4. Inject fault to the IR
+```injectfault ./llfi/sum-faultinjection.exe 10```
+5. Analyze the result
+```python measure.py```
+
+
 
 ####GUI
 If you have used `./setup` to install SE-FI, you need to set new environment variables for tcsh shell before running the GUI for the first time. Open `~/.tcshrc` using your favourite text editor and add `setenv llfibuild <LLFI_BUILD_ROOT>/` and `setenv zgrviewer <LLFI_BUILD_ROOT>/tools/zgrviewer/` to it. [OPTIONAL] Create an environment variable "COMPARE" with the path of the SDC check script.
